@@ -1,0 +1,98 @@
+body {
+    font-family: Roboto;
+    font-size: 18px;
+    background-color: lavender;
+    }
+
+header {
+    border-bottom: 2px solid white;
+    margin-bottom: -1rem;
+    display: flex;
+    }
+
+ul, label, a , h2, h6{ 
+    margin-left:5px;
+}  
+ 
+p {
+    margin-top: 0px;
+    /* margin-left: 5px; */
+    margin-bottom: 0rem;
+    }
+
+h1 {
+    text-align: center;
+    padding: 0px 10px;
+}
+header h1 a {
+    color: #18191A;
+    text-decoration: none;
+    font-weight: 30;
+    padding:20;
+    }
+
+.title {
+    margin-right: auto;
+    }
+
+
+/* .new-blog a {
+    padding-left: 50px;
+    } */
+
+.post-entry {
+    margin-bottom: 2rem ;
+    }
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+    }
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: #7E7E7E;
+    text-decoration: none;
+    font-weight:20;
+    font-size:23px;
+
+    }
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+    }
+
+.post-entry h2 a:hover {
+    color: red;
+    }
+
+.login-details {
+    position: sticky;
+    padding: 1px;
+    margin: 1px;
+    right: 10;
+    top: 1px;
+    color:black;
+    text-align: center;
+}
+
+.login-sentence {
+    color: white;
+    margin:1px;
+}
+
+a {
+    top: 2px;
+}
+
+
+.row {
+    width: 50rem;
+    margin: 5px;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 500px;
+    position:absolute;
+  }

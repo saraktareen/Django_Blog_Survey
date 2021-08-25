@@ -1,0 +1,30 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Home</h1>
+<br>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Blog</h5>
+                    <p class="card-text">Displays different blog posts</p>
+                    <a href="{% url 'post_list' %}" class="btn btn-primary">Blog Posts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Survey</h5>
+                    <p class="card-text">Displays survey questions</p>
+                    <a href="{% url 'question_list' %}" class="btn btn-primary">Question List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}     

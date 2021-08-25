@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class ="post-entry">
+        <br>
+            <h1>Questions Detail</h1>
+        <br>
+            <h2>{{ object.question }}</h2>
+            <h6>{{ object.author }}</h6>
+    </div>
+    
+    <p><a href="{% url 'question_edit' object.pk %}">+ Edit Question</a></p>
+    <p><a href="{% url 'question_delete' object.pk %}">+ Delete Question</a></p>
+
+{% endblock content %}

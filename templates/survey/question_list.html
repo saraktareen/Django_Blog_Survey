@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Survey Questions</h1>
+<br>
+    <div class="question-list">
+        <h5><a href="{% url 'question_new' %}">+ Add a Question</a></h5>
+    </div>
+    <br>
+    {% for q in object_list %}
+        <ul>
+            <div class="question-entry">
+                <li><h2><a href = "{% url 'question_detail' q.pk %}"> {{ q.question }} </a></h2></li>
+            </div>
+        </ul>
+    {% endfor %}
+{% endblock content %}
+
